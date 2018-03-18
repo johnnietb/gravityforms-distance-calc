@@ -114,8 +114,8 @@ class GF_Field_Distance_Calculator extends GF_Field {
 
 	private function map_form( $field_id, $rate ) {
 		return '<div class="distance_addresses" id="distance_addresses_' . $field_id . '">
-								<input type="text" class="google_places_field" name="from_' . $field_id . '" id="from_' . $field_id . '" placeholder="Fra startsted" autocomplete="off" required>
-								<input type="text" class="google_places_field" name="to_' . $field_id . '" id="to_' . $field_id . '" placeholder="Til destination" autocomplete="off" required>
+								<input type="text" class="google_places_field" name="from_' . $field_id . '" id="from_' . $field_id . '" placeholder="Fra startsted" autocomplete="off">
+								<input type="text" class="google_places_field" name="to_' . $field_id . '" id="to_' . $field_id . '" placeholder="Til destination" autocomplete="off">
 								<input type="hidden" name="dc_km_rate_' . $field_id . '" id="dc_km_rate_' . $field_id . '" value="' . $rate .'"/>
 								<button type="button" class="doDistanceCalculation" onclick="calculateDrivingDistance(\''.$field_id.'\');">Beregn og tilføj kørsel</a>
 						  </div>';

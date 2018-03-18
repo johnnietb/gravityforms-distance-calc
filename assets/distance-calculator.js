@@ -22,9 +22,10 @@ function calculateDrivingDistance( fieldId ){
       },
       function(data) {
         $addButton = jQuery( '#distance_calculator_' + fieldId + ' tr.dc_expense_row:last td');
+        jQuery( '#from_' + fieldId ).val('');
+        jQuery( '#to_' + fieldId ).val('');
         distCalcAddListItem( $addButton, data.description, data.expense);
-        start.val('');
-        destination.val('');
+
       }
     );
 
