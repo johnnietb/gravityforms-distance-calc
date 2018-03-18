@@ -1,0 +1,65 @@
+.distance-calculator {
+  width: 100%;
+}
+
+.distance-calculator td {
+  padding: 4px 0;
+}
+
+.distance-calculator td+td {
+  padding: 0 0 0 16px;
+}
+
+.distance-calculator td.icons {
+  width: 48px;
+  padding: 4px;
+}
+
+.distance-calculator .icons img {
+  vertical-align: middle;
+  display: inline-block;
+  background-color: transparent !important;
+  background-position: 0 0;
+  background-size: 16px 16px !important;
+  background-repeat: no-repeat;
+  border: none !important;
+  width: 16px !important;
+  height: 16px !important;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.distance-calculator .icons img:hover {
+  opacity: 1;
+}
+
+.distance-calculator td.total {
+  text-align: right;
+  padding: 4px;
+}
+
+.distance-calculator td.total input {
+  border:0;
+  border-radius: 0;
+  background:none;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0px;
+  margin:0;
+  font-weight: bold;
+  width: 88px;
+  text-align: right;
+}
+
+.distance_addresses {
+  border-radius: 5px;
+  border:1px solid #ddd;
+  background:#eee;
+  padding:20px;
+  display: none;
+}
+
+.distance_addresses input,
+.distance_addresses button {
+  margin: 4px;
+}
